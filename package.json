@@ -1,0 +1,22 @@
+{
+  "name": "task-management-platform",
+  "version": "1.0.0",
+  "description": "任务管理平台",
+  "main": "index.js",
+  "scripts": {
+    "test": "testtest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ab-inbev/APAC_Yedian_Tasks_Management.git"
+  },
+  "author": "Wenqing Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab-inbev/APAC_Yedian_Tasks_Management/issues"
+  },
+  "homepage": "https://github.com/ab-inbev/APAC_Yedian_Tasks_Management#readme",
+  "dependencies": {
+    "node-cron": "^1.1.3"
+  }
+}
