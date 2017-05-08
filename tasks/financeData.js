@@ -22,6 +22,10 @@ module.exports = {
     return ethTicker
   },
 
+  priceSlopeCheck: async () => {
+
+  },
+
   createETHReport: async (ethPrice) => {
     console.log(ethPrice)
 
