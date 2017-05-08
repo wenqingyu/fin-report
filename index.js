@@ -31,7 +31,7 @@ console.log('Task Manager Start: ' + new Date().toISOString())
 cron.schedule(heartBeatRate, DefaultTasks.heartbeat)
 
 /** Eth Profit Report */
-cron.schedule('0 0 */4 * * *', ethProfitReport())
+cron.schedule('0 0 */2 * * *', ethProfitReport())
 
 async function ethProfitReport () {
   var ethTicker = await fintechDataSyncTask.priceSync()
