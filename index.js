@@ -23,7 +23,7 @@ var hourly = '0 0 * * * *'
 var minutely = '0 * * * * *'
 
 // HeartBeatRate: 5 seconds
-var heartBeatRate = '* */10 * * * *'
+var heartBeatRate = '* */30 * * * *'
 
 console.log('Task Manager Start: ' + new Date().toISOString())
 
