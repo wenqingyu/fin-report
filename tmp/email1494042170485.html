@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Chartist Tests</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.css">
+  </head>
+  <body>
+
+
+<div class="ct-chart ct-golden-section" id="chart1"></div>
+<div class="ct-chart ct-golden-section" id="chart2"></div>
+
+<script>
+  // Initialize a Line chart in the container with the ID chart1
+  new Chartist.Line('#chart1', {
+    labels: [1, 2, 3, 4],
+    series: [[100, 120, 180, 200]]
+  });
+
+  // Initialize a Line chart in the container with the ID chart2
+  new Chartist.Bar('#chart2', {
+    labels: [1, 2, 3, 4],
+    series: [[5, 2, 8, 3]]
+  });
+</script>
+
+    <!-- Site content goes here !-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.js"></script>
+  </body>
+</html>

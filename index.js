@@ -1,5 +1,6 @@
 const cron = require('node-cron')
 const DefaultTasks = require('./tasks/DefaultTask.js')
+const fintechDataSyncTask = require('./tasks/financeData.js')
 
 /**
 * field	value
@@ -28,3 +29,14 @@ console.log('Task Manager Start: ' + new Date().toISOString())
 
 /** HeartBeat Task Demo */
 cron.schedule(heartBeatRate, DefaultTasks.heartbeat)
+
+/** Eth Profit Report */
+cron.schedule('0 0 */4 * * *', ethProfitReport())
+
+async function ethProfitReport () {
+  var ethTicker = await fintechDataSyncTask.priceSync()
+  var ethProfitReport = await fintechDataSyncTask.createETHReport(parseInt(ethTicker.last))
+  fintechDataSyncTask.sendReport(ethProfitReport)
+}
+
+ethProfitReport()
