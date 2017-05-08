@@ -11,7 +11,7 @@ module.exports = {
 
     email: 'wenqing@airplake.com',
     password: '',
-    server: ''
+    server: 'smtp.mxhichina.com'
   })
 
 }
