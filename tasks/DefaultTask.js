@@ -1,6 +1,6 @@
 
 module.exports = {
   heartbeat: function () {
-    console.log('HeartBeat')
+    console.log('HeartBeat' + new Date().toISOString())
   }
 }
