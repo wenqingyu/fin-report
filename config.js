@@ -4,6 +4,7 @@ module.exports = {
 
   investorList: [
       {client: 'master', eth: 14.04, costPrice: 500},
+      {client: 'me', eth: 8.2, costPrice: 500},
       {client: 'David', eth: 5.84, costPrice: 684}
   ],
 
